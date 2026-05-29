@@ -40,7 +40,7 @@ const Home = () => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="mt-8 flex items-center gap-8"
+            className="mt-8 flex flex-wrap justify-center sm:justify-start items-center gap-8"
           >
             <ActionButton to="contactUs" variant="link">
               Join Now
@@ -69,7 +69,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="h-[150] w-full bg-primary-100 py-10">
-        <div className="mx-auto w-5/6 flex items-center justify-center gap-8">
+        <div className="mx-auto w-5/6 flex items-center justify-between gap-8">
           {sponsorImages.map((image, index) => (
             <motion.div
               key={index}
