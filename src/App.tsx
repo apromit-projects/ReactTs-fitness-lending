@@ -1,6 +1,7 @@
 import NavBar from "./components/navbar";
 import Home from "./components/home";
 import Benefits from "./components/benefits";
+import OurClasses from "./components/ourClasses";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Home />
       <Benefits />
+      <OurClasses />
     </div>
   );
 }
