@@ -48,6 +48,7 @@ body,
   overflow-x: hidden;
   font-family: var(--font-dmsans);
   scroll-behavior: smooth;
+  background: var(--color-gray-20);
 }
 
 .swiper-button-next svg,
