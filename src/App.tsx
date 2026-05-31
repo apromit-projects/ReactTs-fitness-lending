@@ -3,6 +3,7 @@ import Home from "./components/home";
 import Benefits from "./components/benefits";
 import OurClasses from "./components/ourClasses";
 import ContactUs from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Benefits />
       <OurClasses />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
