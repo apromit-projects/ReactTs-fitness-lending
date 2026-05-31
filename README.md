@@ -1,7 +1,11 @@
-# Fitnes
+# Fitness Evogym
+
+**Live Demo:**
+
+[![web](./src/assets/screenshot.png)](https://react-ts-fitness-lending-v749.vercel.app/)
 
 ### Используемые технологии
-- React 19 (react, react-dom)
+
 - Vite (vite, @vitejs/plugin-react)
 - TypeScript
 - Tailwind CSS 4 (tailwindcss, postcss)
@@ -19,20 +23,21 @@ npm run dev
 - File vite.config.ts
 
 ```ts
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [{find: "@", replacement: path.resolve(process.cwd(), "src")}]
-  }
-})
+    alias: [{ find: "@", replacement: path.resolve(process.cwd(), "src") }],
+  },
+});
 ```
 
--  settings.json в VS Code
+- settings.json в VS Code
+
 ```json
 {
   "files.associations": {
@@ -53,4 +58,3 @@ export default defineConfig({
   ]
 }
 ```
-
