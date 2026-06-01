@@ -16,6 +16,7 @@ const ContactUs = () => {
   const {
     register,
     handleSubmit,
+    trigger,
     formState: { errors, isSubmitSuccessful },
     reset,
   } = useForm<ContactFormType>({
@@ -23,13 +24,14 @@ const ContactUs = () => {
     mode: "onTouched",
   });
 
-  const onSubmit = (data: ContactFormType) => {
-    console.log("Form submitted with: ", data);
+  const onSubmit = async () => {
+    try {
+      const isValid = await trigger();
 
-    setTimeout(() => {
-      alert("Thx for your msg!");
-      reset();
-    }, 1000);
+      if (isValid) reset();
+    } catch (error) {
+      console.error("FormSubmit error: ", error);
+    }
   };
 
   return (
@@ -57,7 +59,8 @@ const ContactUs = () => {
           className="mt-10 basis-3/5 md:mt-0"
         >
           <form
-            action=""
+            action={"https://formsubmit.co/maxapromit@gmail.com"}
+            method="POST"
             className="relative z-2"
             onSubmit={handleSubmit(onSubmit)}
           >
