@@ -81,15 +81,14 @@ const ContactUs = () => {
             />
             <button
               type="submit"
-              className="cursor-pointer bg-secondary-500 mt-5 rounded-lg px-20 py-3 animate hover:text-white"
+              className="cursor-pointer bg-secondary-500 mt-5 rounded-lg px-20 py-3 animate hover:text-white uppercase"
             >
-              SUBMIT
+              Submit
             </button>
             {isSubmitSuccessful && (
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                // variants={slideUp}
                 className="mt-4 text-green-600 text-center font-semibold"
               >
                 ✅ Your message has been sent successffuly!
